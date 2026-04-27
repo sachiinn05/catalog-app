@@ -6,11 +6,9 @@ A modern, responsive **multi-category product catalog web application** built us
 
 ## 🌐 Live Demo
 
-👉 https://your-vercel-link.vercel.app
+👉 https://catalog-app-blush.vercel.app/
 
-## 📂 GitHub Repository
 
-👉 https://github.com/your-username/catalog-app
 
 ---
 
@@ -91,18 +89,7 @@ npm run dev
 
 ---
 
-## 🚀 Future Improvements
 
-* Dark mode 🌙
-* API integration
-* Animations (Framer Motion)
-* State management
-
----
-
-## 📸 Preview
-
-(Add screenshots here)
 
 ---
 
