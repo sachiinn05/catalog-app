@@ -1,16 +1,117 @@
-# React + Vite
+# 🚀 CatalogX – Dynamic Multi-Category Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **multi-category product catalog web application** built using **React.js** and **Tailwind CSS (CDN)**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+👉 https://your-vercel-link.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 GitHub Repository
 
-## Expanding the ESLint configuration
+👉 https://github.com/your-username/catalog-app
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Features
+
+* 🔍 Search products in real-time
+* 🎯 Filter by category
+* ⚡ Dynamic rendering (no hardcoding)
+* 📱 Fully responsive design
+* 🧊 Loading skeleton UI
+* ✨ Modern UI (glassmorphism + animations)
+* 🔄 Item detail page with dynamic properties
+
+---
+
+## 🧠 Key Concept
+
+This project dynamically renders product attributes using a flexible structure (`itemprops`), allowing different categories (Cars, Phones, Bikes, etc.) to display unique properties without hardcoding.
+
+---
+
+## 🛠️ Tech Stack
+
+* Frontend: React.js
+* Styling: Tailwind CSS (CDN)
+* Routing: React Router DOM
+* Data: JSON
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── CategorySection.jsx
+│   ├── ItemCard.jsx
+│   ├── SkeletonCard.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── ItemDetail.jsx
+│
+├── data/
+│   └── data.json
+│
+├── App.jsx
+├── main.jsx
+```
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/your-username/catalog-app
+cd catalog-app
+npm install
+npm run dev
+```
+
+---
+
+## 💡 Approach
+
+* Used JSON data and grouped items by category using `reduce()`
+* Built reusable components
+* Rendered dynamic properties using `.map()`
+* Implemented routing for navigation
+* Focused on clean UI/UX and responsiveness
+
+---
+
+## ⏱️ Time Taken
+
+~6–8 hours
+
+---
+
+## 🚀 Future Improvements
+
+* Dark mode 🌙
+* API integration
+* Animations (Framer Motion)
+* State management
+
+---
+
+## 📸 Preview
+
+(Add screenshots here)
+
+---
+
+## 👨‍💻 Author
+
+Sachin Singh
+
+---
+
+## ⭐ Final Note
+
+This project focuses on **scalability, dynamic UI rendering, and modern UX design**, making it adaptable for real-world applications like e-commerce platforms.
