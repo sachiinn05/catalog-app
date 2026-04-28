@@ -6,25 +6,55 @@ const ItemCard = ({ item }) => {
   return (
     <div
       onClick={() => navigate(`/item/${item.itemname}`)}
-      className="group hover:-translate-y-1 transition duration-300 relative rounded-3xl overflow-hidden bg-white/70 backdrop-blur-xl shadow-md hover:shadow-2xl cursor-pointer"
+      className="group relative rounded-3xl overflow-hidden cursor-pointer 
+      bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl 
+      border border-white/10 shadow-lg 
+      hover:shadow-purple-500/30 hover:-translate-y-2 
+      transition-all duration-500"
     >
-      <div className="overflow-hidden">
+    
+      <div className="relative overflow-hidden">
         <img
           src={item.image}
-          className="h-48 w-full object-cover group-hover:scale-110 transition duration-700"
+          className="h-52 w-full object-cover 
+          group-hover:scale-110 group-hover:rotate-1 
+          transition duration-700 ease-out"
         />
+
+       
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-70"></div>
       </div>
 
-      <div className="p-4">
-        <h3 className="font-semibold text-lg group-hover:text-indigo-600">
+  
+      <div className="p-5 relative z-10">
+        <h3
+          className="font-semibold text-lg text-white 
+        group-hover:text-transparent group-hover:bg-clip-text 
+        group-hover:bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 transition"
+        >
           {item.itemname}
         </h3>
-        <p className="text-xs text-gray-500 opacity-0 group-hover:opacity-100 transition">
-          Click to view →
+
+        <p
+          className="text-xs text-gray-400 mt-2 opacity-0 
+        group-hover:opacity-100 transition duration-300"
+        >
+          Click to explore →
         </p>
       </div>
 
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-tr from-indigo-500/10 to-purple-500/10"></div>
+    
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 
+      transition duration-500 
+      bg-gradient-to-tr from-indigo-500/20 via-purple-500/10 to-pink-500/20"
+      ></div>
+
+  
+      <div
+        className="absolute inset-0 rounded-3xl border border-transparent 
+      group-hover:border-purple-400/40 transition duration-500"
+      ></div>
     </div>
   );
 };
